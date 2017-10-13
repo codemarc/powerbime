@@ -1,0 +1,69 @@
+body#pbiextension {
+  width: 400px;
+  min-height: 350px;
+  background: ghostwhite;
+}
+
+body#pbiextension .uk-grid-small {
+  margin-left: 0px;
+}
+
+body#pbiextension #header a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body#pbiextension .uk-navbar {
+  height: 24px;
+  margin-left: 0px;
+  font-weight: bold;
+}
+
+body#pbiextension #bookmarks {
+  margin-top: 6px;
+}
+
+body#pbiextension .uk-card .uk-list {
+  line-height: 1.0;
+  margin-top: 6px;
+  margin-left: 14px;
+}
+
+body#pbiextension .uk-card .uk-list img {
+  width: 10px;
+  float: right;
+}
+
+body#pbiextension .uk-card-body {
+  padding: 4px 6px 6px 6px;
+  font-size: 80%;
+  margin-right: 16px;
+}
+
+body#pbiextension .uk-card-title {
+  font-size: .90rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+body#pbiextension .uk-card-title.red {
+  color: red;
+}
+
+body#pbiextension .uk-card-title.green {
+  color: green;
+}
+
+body#pbiextension .uk-card-title.yellow {
+  color: darkgoldenrod;
+}
+
+body#pbiextension .uk-card-title.blue {
+  color: dodgerblue;
+}
+
+body#pbiextension #settings form input {
+  width: 364px;
+}

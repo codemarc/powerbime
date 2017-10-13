@@ -1,0 +1,52 @@
+<project name="PowerBiMe" xmlns:if="ant:if" xmlns:unless="ant:unless" default="zipit" basedir=".">
+
+<!-- Calculate OS Specific Properties -->
+<condition property="onmac">
+    <os family="mac"/>
+</condition>
+
+<condition property="onwin">
+    <os family="windows"/>
+</condition>
+
+<target name="info">
+    <echo>Running Java ${java.version}</echo>
+    <echo>Using ${ant.version}</echo>
+    <echo>Running on ${os.name}</echo>
+    <echo>Dir ${basedir}</echo>
+</target>
+
+<!-- Run this on MacOS -->
+<target name="pakmac" if="onmac">
+    <echo file="./step.sh">#!/bin/bash
+        open -n -b com.google.chrome --args --pack-extension=${basedir}/src/ --pack-extension-key=${basedir}/extensions.pem
+    </echo>
+    <replaceregexp file="./step.sh" match="\s*" replace="" byline="true" />
+    <chmod file="./step.sh" perm="ugo+rx" />
+    <exec executable="./step.sh" failonerror="true"/>	
+    <delete file="./step.sh"/>
+</target>
+
+<!-- Run this on Windows -->
+<target name="pakwin" if="onwin">
+    <property name="chrome" location="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
+    <exec executable="${chrome}">
+        <arg value='--pack-extension=${basedir}\src\'/>
+        <arg value='--pack-extension-key=${basedir}\extensions.pem'/>
+    </exec>
+</target>
+
+<target name="clean">
+    <delete>
+        <fileset dir="." includes="src.crx,step.sh,${ant.project.name}.zip"/>
+    </delete>
+</target>
+
+<target name="zipit" depends="info,pakmac,pakwin">
+    <zip destfile="${ant.project.name}.zip">
+        <zipfileset dir="${basedir}" includes="auto-update.xml,src.crx"></zipfileset>
+        <zipfileset dir="${basedir}/src" includes="**/*" excludes="vue.js"></zipfileset>
+    </zip>
+</target>
+
+</project>

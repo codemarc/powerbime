@@ -1,0 +1,66 @@
+{
+  "Base": [
+    {
+      "name": "Microsoft Power BI",
+      "url": "http://www.powerbi.com/"
+    },
+    {
+      "name": "Power BI Web",
+      "url": "https://app.powerbi.com/?noSignUpCheck=1"
+    },
+    {
+      "name": "Power BI YouTube",
+      "url": "https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg"
+    }
+  ],
+  "People": [
+    {
+      "name": "Adam Saxton",
+      "url": "https://guyinacube.com/"
+    },
+    {
+      "name": "Patrick LeBlanc",
+      "url": "http://patrickdleblanc.com/wordpress/"
+    }
+  ],
+  "Demos": [
+    {
+      "name": "dev.buildinglink.com Embedded Demo",
+      "url": "http://dev.buildinglink.com/v2/admin/powerbi/?dataset=2657373d-2ad0-4640-ada5-9b29d3a92046&group=f57d8612-5a38-4364-89f6-bf25b42806fb&report=aef506b8-5de0-4f5b-a0fe-c4e94f0165cb"
+    },
+    {
+      "name": "microsoft.github.io Embedded Demo",
+      "url": "https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html"
+    }
+  ],
+  "Tools": [
+    {
+      "name": "PowerBI opensource on Github",
+      "url": "https://github.com/search?q=org%3AMicrosoft+powerbi"
+    }
+  ],
+  "Doc": [
+    {
+      "name": "Power BI Documentation",
+      "url": "https://powerbi.microsoft.com/en-us/documentation/"
+    },
+    {
+      "name": "Power BI Embedded",
+      "url": "https://www.youtube.com/redirect?q=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fdocumentation%2Fservices%2Fpower-bi-embedded%2F&event=video_description&v=egP0GHSOUIM&redir_token=azVl-GPXTgO_2TOs_QgDeuPpNMF8MTUwNzk5ODEwOEAxNTA3OTExNzA4"
+    },
+    {
+      "name": "REST Api",
+      "url": "https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-overview-of-power-bi-rest-api/"
+    }
+  ],
+  "Community": [
+    {
+      "name": "Power BI Community",
+      "url": "https://communities.powerbi.com"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/mspowerbi"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Base" : [ {
+    "name" : "Qlik Management Console",
+    "offsite" : true,
+    "url" : "/qmc"
+  }, {
+    "name" : "Qlik Sense Hub",
+    "offsite" : true,
+    "url" : "/hub"
+  }, {
+    "name" : "Qlik Dev Hub",
+    "offsite" : true,
+    "url" : "/dev-hub/"
+  }, {
+    "name" : "Qlik Branch",
+    "url" : "http://branch.qlik.com/"
+  } ],
+  "Community" : [ {
+    "name" : "Qlik Community",
+    "url" : "https://community.qlik.com/community/qlik-sense/new-to-qlik-sense"
+  }, {
+    "name" : "Qlik Demos",
+    "url" : "http://us-b.demo.qlik.com/"
+  }, {
+    "name" : "Living Qlik",
+    "url" : "http://livingqlikview.com/"
+  }, {
+    "name" : "Awesome Qlik",
+    "url" : "https://github.com/stefanwalther/awesome-qap"
+  }, {
+    "name" : "qliksite.io",
+    "url" : "http://qliksite.io"
+  } ],
+  "Doc" : [ {
+    "name" : "Qlik Sense Doc",
+    "url" : "https://help.qlik.com/en-US/sense/3.2/Content/Home.htm"
+  }, {
+    "name" : "Qlik Api Reference",
+    "url" : "https://help.qlik.com/en-US/sense-developer/3.1/Content/APIs-and-SDKs.htm"
+  } ],
+  "Events" : [ {
+    "name" : "Qlikqonnections",
+    "url" : "http://www.qlikqonnections.com/"
+  } ],
+  "People" : [ {
+    "name" : "Marc's Qlik Gists",
+    "url" : "https://gist.github.com/codemarc/8d300390aa06de0a66891bac145d54c1"
+  } ],
+  "Tools" : [ {
+    "name" : "Set Analysis Wizard",
+    "url" : "http://tools.qlikblog.at/SetAnalysisWizard/QlikView-SetAnalysis_Wizard_and_Generator.aspx"
+  }, {
+    "name" : "Slack qlik-branch",
+    "url" : "https://qlik-branch.slack.com/"
+  } ]
+}
