@@ -1,4 +1,5 @@
 <project name="PowerBiMe" xmlns:if="ant:if" xmlns:unless="ant:unless" default="zipit" basedir=".">
+<property environment="env"/>
 
 <!-- Calculate OS Specific Properties -->
 <condition property="onmac">
@@ -29,7 +30,8 @@
 
 <!-- Run this on Windows -->
 <target name="pakwin" if="onwin">
-    <property name="chrome" location="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
+    <property name="chrome" location="${env.SystemDrive}\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
+
     <exec executable="${chrome}">
         <arg value='--pack-extension=${basedir}\src\'/>
         <arg value='--pack-extension-key=${basedir}\extensions.pem'/>
@@ -48,5 +50,6 @@
         <zipfileset dir="${basedir}/src" includes="**/*" excludes="vue.js"></zipfileset>
     </zip>
 </target>
+
 
 </project>

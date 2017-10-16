@@ -70,7 +70,7 @@ $(window).on('load', function () {
   new Vue({
     data: {
       name: chrome.runtime.getManifest().version,
-      url: 'https://chrome.google.com/webstore/detail/qlikme-links/cbbiccimdggcklmoagfalppgjijacajj',
+      url: 'https://chrome.google.com/webstore/detail/qlikme-links/hpbpclohalginomgpnnnalelfnjaeiac',
     }, el: '#version'
   });
 

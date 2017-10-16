@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "PowerBI Links",
   "short_name": "PowerBIMe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Important PowerBI Links",
   "homepage_url": "http://codemarc.net",
   "content_scripts": [

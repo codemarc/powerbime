@@ -51,6 +51,13 @@
     {
       "name": "REST Api",
       "url": "https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-overview-of-power-bi-rest-api/"
+    },
+    {
+      "name": "DAX, MDX and DMX Reference",
+      "url": "https://docs.microsoft.com/en-us/sql/mdx/analysis-services-language-reference"
+    },{
+      "name":"Power Query M Reference",
+      "url": "https://msdn.microsoft.com/en-us/library/mt211003.aspx"
     }
   ],
   "Community": [
